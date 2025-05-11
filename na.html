@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Lời chúc lên đường</title>
+    <link rel="stylesheet" href="na.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Wish</h1>
+        <button id="showMessageBtn">Click đây chị ơi :))</button>
+        <div id="messageBox" class="hidden">
+            <img src="https://i.pinimg.com/736x/30/bf/ef/30bfefcd3fef54a638a0624c11e829f9.jpg" alt="Tạm biệt" class="goodbye-img">
+            <p class="message">
+                 Chúc chị đi đường an toàn nhá ^^
+            </p>
+            <p class="signature">- Hàng xóm của chị ^^ -</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("showMessageBtn").addEventListener("click", function () {
+            document.getElementById("messageBox").classList.remove("hidden");
+            this.style.display = "none"; // Ẩn nút sau khi nhấn
+        });
+    </script>
+</body>
+</html>
